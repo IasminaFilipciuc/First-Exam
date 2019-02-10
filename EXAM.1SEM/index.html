@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="parallax1"></div>
+
+    <div class="typewriter">
+        <h1 id="txt"></h1>
+    </div>
+
+
+    <div class="parallax1"></div>
+
+    <div class="portfolio">
+
+        <a href="portfolio.html">
+            <h1>Portfolio</h1>
+        </a>
+
+        <div class="parallax2"></div>
+
+        <a href="aboutme.html">
+            <h1>Who am I ?</h1>
+        </a>
+
+        <div class="parallax2"></div>
+
+        <a href="contact.html">
+            <h1>Contact</h1>
+        </a>
+
+    </div>
+
+    <div class="parallax2"></div>
+
+<script>
+    
+var i = 0;
+var txt = 'Discover my Portfolio';
+function typeWriter() {
+    if(i < txt.length) {
+    document.getElementById('txt').innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+    }
+}
+ window.onload = typeWriter;
+
+    </script>
+</body>
+
+</html>

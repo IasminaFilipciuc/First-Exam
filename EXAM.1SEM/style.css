@@ -1,0 +1,377 @@
+body,
+html {
+    height: 100%;
+    font-family: cursive;
+ }
+
+.parallax1 {
+
+    background-image: url(img/b6f8116741dec734489c29d492f3920f.jpg);
+    height: 60%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.parallax {
+    background-image: url(img/b6f8116741dec734489c29d492f3920f.jpg);
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.parallax2 {
+
+    background-image: url(img/b6f8116741dec734489c29d492f3920f.jpg);
+    height: 85px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.typewriter {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: -18.5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    font-size: 1.7em;
+}
+
+.menu a{
+    clear: right;
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+
+#txt {
+    border-right: solid black 5px;
+    display: inline-block;
+    animation: blink-caret .5s step-end infinite;
+    letter-spacing: .15em;
+    font-family: cursive;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: burlywood
+    }
+}
+
+.picport {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.portfolio {
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.9vw;
+}
+
+.imgMe {
+    width: 40%;
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 9%;
+
+}
+
+ .button {
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: cursive;
+    text-align: center;
+    color: black;
+    margin-left: 8px;
+    margin-top: 1.5%;
+    font-size: 135%;
+    border-radius: 20px;
+}
+
+#button {
+    margin-left: 67%;
+}
+
+.social {
+    margin-left: 7%;
+    margin-bottom: 3.5%;
+}
+
+.pic2 {
+    margin-bottom: 0.5%;
+}
+
+
+.abme {
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h3{
+  font-size: 2.5em;
+text-align: center;
+}
+
+h{
+    font-size: 2.3em;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.picproj {
+    width: 40%;
+    margin-left: 30%;
+}
+
+
+
+.button1 {
+    cursor: pointer;
+    font-family: cursive;
+    text-align: center;
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+    border-radius: 17px;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+    grid-auto-rows: 1fr;
+    margin-top: 40px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: silver;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: silver;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: 27%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 999px) {
+
+    .parallax,
+    .parallax1,
+    .parallax2 {
+        background-image: url(img/bgmobile.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .parallax {
+        height: 90px;
+    }
+
+    .parallax1 {
+        height: 25.5%;
+    }
+
+    .parallax2 {
+        height: 53px;
+    }
+
+    .portfolio {
+        font-size: 0.8em;
+    }
+    
+    
+    .project {
+        font-size: 2.9vw;
+    }
+    
+    .typewriter{
+        font-size: 3vw;
+    }
+    
+    .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    max-width: 300px;
+    margin-left: 8%;
+    margin-bottom: 20px;
+}
+
+    
+    .pic1, .pic2 {
+        width: 50%;
+    }
+    
+    .social {
+        margin-left: 1%;
+    }
+    
+    section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5em;
+    grid-auto-rows: 1fr;
+    margin-top: 20px;
+    margin-bottom: 5%;
+     }
+    
+    .picport{
+        margin-left: 10%;
+    }
+    
+    .imgMe{
+        width: 88%;
+        margin-top: 12%; 
+    }
+    
+    .abme {
+     margin-bottom: 5px;
+    font-size: 4vw;    
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3{
+        font-size: 1.5em;
+    }
+    
+    h{
+        font-size: 1em;
+    }
+    
+    .menu{
+        font-size: 1.2em;
+    }
+    
+ @media only screen and (max-width: 600px){
+     label {
+         display: block;
+         cursor: pointer;
+         width: 26px;
+         float: right;
+     }
+     
+     .menu {
+         text-align: center;
+         width: 100%;
+         display:none;
+         overflow: hidden;
+         font-size: 1.2em;
+     }
+     
+     .menu a{
+         display: block;
+         border-bottom: 1px solid #EAEAEB;
+         margin: 0;
+     }
+     
+     #toggle:checked + .menu {
+         display: block;
+     }
+      
+     .nav {
+         margin-bottom: 20%;
+     }
+     
+    
+}
+
+@media only screen and (min-width: 1000px){
+
+    .parallax,
+    .parallax1,
+    .parallax2 {
+        background-image: url(img/b6f8116741dec734489c29d492f3920f.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+}
